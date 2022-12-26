@@ -2,7 +2,7 @@ import React from 'react'
 import './About.scss'
 function About() {
     return (
-        <div className='about'>
+        <div className='about' id='about'>
             <div className="left">
                 <div className="card bg">
 
@@ -14,14 +14,11 @@ function About() {
             <div className="right">
                 <h1 className="title">About Me</h1>
                 <p className="sub">
-                    It is a long established fact that a reader will be distracted by the
-                    readable content.
+                    I am a computer science student. Loves exploring new technology
+                    and the way hardware and software works together.
                 </p>
                 <p className="desc">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat duis aute irure dolor in reprehende.
+                    Also talks about tech at youtube and article section of the portfolio.
                 </p>
             </div>
         </div>

@@ -31,5 +31,10 @@
     }
     .right{
         flex: 1;
+        margin-right: 50px;
+        text-align: justify;
+        .title{
+            color: darkslategray;
+        }
     }
 }

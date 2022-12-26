@@ -9,7 +9,7 @@
   
   .p-browser {
     height: 20px;
-    background-color: rgb(243, 242, 242);
+    background-color: darkslategray;
     display: flex;
     align-items: center;
     position: sticky;
@@ -21,7 +21,16 @@
     height: 6px;
     border-radius: 50%;
     margin: 3px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    &:nth-child(1):hover{
+      background-color: rgb(245, 58, 58);
+    }
+    &:nth-child(2):hover{
+      background-color: goldenrod;
+    }
+    &:nth-child(3):hover{
+      background-color: #3977b1;
+    }
   }
   
   .p-img {

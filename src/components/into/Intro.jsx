@@ -3,7 +3,7 @@ import './Intro.scss'
 import Me from '../../images/avatar.png';
 function Intro() {
     return (
-        <div className="intro">
+        <div className="intro" id="intro">
             <div className="left">
                 <div className="left-wrapper">
                     <h2 className='address'>Hello I am,</h2>

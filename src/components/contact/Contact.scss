@@ -5,7 +5,7 @@
     .bg{
         width: 20px;
         height: 100%;
-        background-color: #59b256;
+        background-color: darkslategray;
         position: absolute;
     }
     .wrapper{
@@ -16,6 +16,7 @@
             .title{
                 font-size: 60px;
                 width: 80%;
+                color: darkslategray;
             }
             .info-item{
                 display: flex;
@@ -37,7 +38,9 @@
             flex-direction: column;
             .desc{
                 font-weight: 200;
-
+                b{
+                    color: darkslategray;
+                }
             }
             form{
                 margin-top: 20px;
@@ -57,7 +60,8 @@
                 button{
                     border: none;
                     padding: 15px;
-                    background-color: #59b256;
+                    border-radius: 5px;
+                    background-color: darkslategray;
                     color: white;
                     font-weight: 500;
                     cursor: pointer;

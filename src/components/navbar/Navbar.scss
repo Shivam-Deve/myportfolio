@@ -1,7 +1,6 @@
 .navbar{
     padding: 0 50px;
-    color: #59b256;
-    // background-color: #59b2565d;
+    color: darkslategray;
     font-weight: 600;
     font-size: 18px;
     width: 100%;
@@ -11,9 +10,68 @@
     justify-content: space-between;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 10;
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    &.active{
+        background-color: darkslategray;
+        .logo{
+            color: white;
+        }
+        .navList li:nth-child(1){
+            color: white;
+        }
+    }
     .logo{
         flex: 3;
+        transition: 1s ease all;
+        .stamp{
+            position: absolute;
+            transition: 1s ease all;
+            top: 0;
+            width:110px;
+            height:110px;
+            background-color: darkslategray;
+            border-bottom-left-radius:5px ;
+            border-bottom-right-radius: 5px;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .dp{
+                flex: 11;
+                width: 80%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .pic{
+                    height: 80%;
+                    border-radius: 50%;
+                    border: 2px solid white;
+                    overflow: hidden;
+                    background-color: white;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: contain;
+                        transition: 1s ease all;
+                    }
+                }
+            }
+            .name{
+                flex: 1;
+                width: 90%;
+                margin:auto;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                z-index: 5;
+                text-align: center;
+                background-color: rgb(255, 255, 255);
+                color: darkslategray;
+            }
+        }
     }
     .nav{
         flex: 3;

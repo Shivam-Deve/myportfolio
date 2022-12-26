@@ -1,9 +1,13 @@
 import React from 'react'
 import './Contact.scss'
 import { useRef } from 'react'
-import Phone from '../../images/phone.png'
-import Email from '../../images/email.png'
-import Address from '../../images/address.png'
+import EmailIcon from '@mui/icons-material/Email';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import { Link } from 'react-router-dom';
+
 function Contact() {
     const form = useRef()
     const handleSubmit = (e) => {
@@ -11,24 +15,30 @@ function Contact() {
 
     }
     return (
-        <div className="contact">
+        <div className="contact" id='contact'>
             <div className="bg"></div>
             <div className="wrapper">
                 <div className="left">
                     <h1 className="title">Let's discuss your project</h1>
                     <div className="info">
                         <div className="info-item">
-                            <img src={Phone} alt="" className="icon" />
-                            +1 1234 556 75
+                            <EmailIcon style={{ color: 'darkslategray' }} /> <span>mishivamm@gmail.com</span>
                         </div>
                         <div className="info-item">
-                            <img className="icon" src={Email} alt="" />
-                            contact@lama.dev
+                            <GitHubIcon style={{ color: 'darkslategray' }} /> mishivamm@gmail.com
                         </div>
                         <div className="info-item">
-                            <img className="icon" src={Address} alt="" />
-                            245 King Street, Touterie Victoria 8520 Australia
+                            <LinkedInIcon style={{ color: 'darkslategray' }} /> mishivamm@gmail.com
                         </div>
+                        <div className="info-item">
+                            <YouTubeIcon style={{ color: 'darkslategray' }} /> mishivamm@gmail.com
+                        </div>
+                        <div className="info-item">
+
+                            <InstagramIcon style={{ color: 'darkslategray' }} /> mishivamm@gmail.com
+
+                        </div>
+
                     </div>
                 </div>
                 <div className="right">
