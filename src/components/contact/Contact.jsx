@@ -45,13 +45,35 @@ function Contact() {
                         <b>What’s your story?</b> Get in touch. Always available for
                         freelancing if the right project comes along. me.
                     </p>
-                    <form ref={form} onSubmit={handleSubmit}>
-                        <input type="text" placeholder="Name" name="user_name" />
-                        <input type="text" placeholder="Subject" name="user_subject" />
-                        <input type="text" placeholder="Email" name="user_email" />
-                        <textarea rows="5" placeholder="Message" name="message" />
-                        <button>Submit</button>
-                    </form>
+                    <div className="form">
+                        <span>Email Me</span>
+                        <form ref={form} onSubmit={handleSubmit}>
+                            <div className="row">
+                                <div className="form-control">
+                                    <label htmlFor="user_name">Name</label>
+                                    <input type="text" placeholder="Name" id="user_name" name="user_name" />
+                                </div>
+                                <div className="form-control">
+                                    <label htmlFor="subject">Subject</label>
+                                    <input type="text" placeholder="Subject" id='subject' name="user_subject" />
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="form-control">
+                                    <label htmlFor="email">Email</label>
+                                    <input type="text" placeholder="Email" id='email' name="user_email" />
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="form-control">
+                                    <label htmlFor="message">Message</label>
+                                    <textarea rows="5" id='message' placeholder="Message" name="message" />
+                                </div>
+                            </div>
+                            <button>Submit</button>
+                        </form>
+                    </div>
+
                 </div>
             </div>
         </div>

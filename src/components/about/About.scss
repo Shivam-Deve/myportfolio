@@ -15,18 +15,45 @@
             height: 70vh;
             border-radius: 30px;
             overflow: hidden;
-            img{
+            position: relative;
+            .title{
+                position: absolute;
+                top: 0;
+                left:50%;
+                z-index: 100;
+                background-color: white;
+                color: darkslategray;
+                transform: translateX(-50%);
+                padding: 5px 20px;
+                font-weight: 800;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+            .skill{
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
+                padding: 30px;
+                display: flex;
+                justify-content:space-between;
+                align-items: center;
+                flex-wrap: wrap;
                 position: relative;
+                gap: 10px;
+                background-color: darkslategray;
+                span{
+                    padding: 5px 10px;
+                    background-color: white;
+                    border-radius: 5px;
+                    font-weight: 600;
+                    color: darkslategray;
+                }
             }
         }
         .bg{
             position: absolute;
             top: 50px;
             left: 50px;
-            background-color: #333;
+            background-color: rgba(32, 53, 53, 0.445);
         }
     }
     .right{

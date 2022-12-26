@@ -8,7 +8,25 @@ function About() {
 
                 </div>
                 <div className="card">
-                    <img src="https://images.pexels.com/photos/3585047/pexels-photo-3585047.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="img" />
+                    <div className='title'>
+                        Skills
+                    </div>
+                    <div className="skill">
+                        <span>Javascript</span>
+                        <span>MySql</span>
+                        <span>Mongodb</span>
+                        <span>Java</span>
+                        <span>C++</span>
+                        <span>TypeScript</span>
+                        <span>Node</span>
+                        <span>Express</span>
+                        <span>Css</span>
+                        <span>Bootstrap</span>
+                        <span>Tailwind</span>
+                        <span>MaterialUi</span>
+                        <span>React</span>
+                        <span>Redux</span>
+                    </div>
                 </div>
             </div>
             <div className="right">

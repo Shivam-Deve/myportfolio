@@ -1,5 +1,6 @@
 import pro1 from './images/pro1.png'
 import pro2 from './images/pro2.png'
+import pro3 from './images/pro3.png'
 export const products = [
     {
         id: 1,
@@ -13,7 +14,7 @@ export const products = [
     },
     {
         id: 3,
-        img: "",
+        img: pro3,
         link: "#",
     },
     {

@@ -9,7 +9,7 @@
         position: absolute;
     }
     .wrapper{
-        padding: 50px;
+        padding: 100px 50px;
         display: flex;
         .left{
             flex: 1;
@@ -42,29 +42,83 @@
                     color: darkslategray;
                 }
             }
-            form{
+            .form{
                 margin-top: 20px;
-                input{
-                    width: 50%;
-                    height: 50px;
-                    border: none;
-                    border-bottom: 1px solid black;
-                    margin: 10px 0;
-                    font-size: 14px;
-                    padding-left: 10px;
+                background-color: darkslategray;
+                border-radius:10px;
+                padding:10px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                span{
+                    position: absolute;
+                    top: 0;
+                    left:50%;
+                    transform: translateX(-50%);
+                    background-color: white;
+                    color: darkslategray;
+                    padding: 10px 50px;
+                    font-weight: 800;
+                    border-bottom-left-radius: 5px;
+                    border-bottom-right-radius: 5px;
                 }
-                textarea{
-                    width: 100%;
-
-                }
-                button{
-                    border: none;
-                    padding: 15px;
-                    border-radius: 5px;
-                    background-color: darkslategray;
-                    color: white;
-                    font-weight: 500;
-                    cursor: pointer;
+                form{
+                    margin: 50px 0;
+                    display: flex;
+                    flex-direction: column;
+                    width: 80%;
+                    .row{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 10px;
+                        margin-bottom: 20px;
+                        .form-control{
+                            flex: 1;
+                            font-size: 14px;
+                            label{
+                                color: white;
+                                font-size: large;
+                                font-weight: 800;
+                                display: block;
+                                margin-bottom: 10px;
+                                text-transform: uppercase;
+                            }
+                            input{
+                                height: 50px;
+                                display: block;
+                                padding-left: 10px;
+                                border-radius: 5px;
+                                border: none;
+                                outline: none;
+                                width: 100%;
+                                &:focus{
+                                    outline: none;
+                                }
+                            }  
+                            textarea{
+                                width: 100%;
+                                padding: 10px;
+                                border-radius: 5px;
+                                &:focus{
+                                    outline: none;
+                                }
+                            } 
+                        }
+                        
+                    }
+                    button{
+                        border: none;
+                        padding: 15px;
+                        width:fit-content;
+                        border-radius: 5px;
+                        background-color: white;
+                        color: darkslategray;
+                        font-weight: 500;
+                        cursor: pointer;
+                    }  
                 }
             }
         }
