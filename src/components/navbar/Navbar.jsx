@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './Navbar.scss'
-import { Link } from 'react-router-dom'
 function Navbar() {
     const [darkBg, setDarkBg] = useState(false);
     const changeBg = () => {
