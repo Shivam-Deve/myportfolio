@@ -9,7 +9,7 @@
         position: absolute;
     }
     .wrapper{
-        padding: 100px 50px;
+        padding: 50px;
         display: flex;
         .left{
             flex: 1;
@@ -65,7 +65,7 @@
                     border-bottom-right-radius: 5px;
                 }
                 form{
-                    margin: 50px 0;
+                    margin-top: 50px;
                     display: flex;
                     flex-direction: column;
                     width: 80%;
