@@ -26,6 +26,11 @@ function About() {
                         <span>MaterialUi</span>
                         <span>React</span>
                         <span>Redux</span>
+                        <span>ReactNative</span>
+                        <span>AWS</span>
+                        <span>Docker</span>
+                        <span>Git</span>
+                        <span>Linux</span>
                     </div>
                 </div>
             </div>
