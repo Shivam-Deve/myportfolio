@@ -5,6 +5,11 @@ function Intro() {
     return (
         <div className="intro" id="intro">
             <div className="left">
+
+                <div className="pic">
+                    <img src="/imgs/dp.jpeg" alt="" srcset="" />
+
+                </div>
                 <div className="left-wrapper">
                     <h2 className='address'>Hello I am,</h2>
                     <h2 className='name'>SHIVAM</h2>

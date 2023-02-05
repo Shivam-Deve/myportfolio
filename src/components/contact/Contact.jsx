@@ -21,20 +21,20 @@ function Contact() {
                     <h1 className="title">Let's discuss your project</h1>
                     <div className="info">
                         <div className="info-item">
-                            <EmailIcon style={{ color: 'darkslategray' }} /> <span>mishivamm@gmail.com</span>
+                            <EmailIcon className='icon' style={{ color: 'darkslategray' }} /> <span>mishivamm@gmail.com</span>
                         </div>
                         <div className="info-item">
-                            <GitHubIcon style={{ color: 'darkslategray' }} /> mishivamm@gmail.com
+                            <GitHubIcon className='icon' style={{ color: 'darkslategray' }} /> <span>mishivamm@gmail.com</span>
                         </div>
                         <div className="info-item">
-                            <LinkedInIcon style={{ color: 'darkslategray' }} /> mishivamm@gmail.com
+                            <LinkedInIcon className='icon' style={{ color: 'darkslategray' }} /> <span>mishivamm@gmail.com</span>
                         </div>
                         <div className="info-item">
-                            <YouTubeIcon style={{ color: 'darkslategray' }} /> mishivamm@gmail.com
+                            <YouTubeIcon className='icon' style={{ color: 'darkslategray' }} /><span>mishivamm@gmail.com</span>
                         </div>
                         <div className="info-item">
 
-                            <InstagramIcon style={{ color: 'darkslategray' }} /> mishivamm@gmail.com
+                            <InstagramIcon className='icon' style={{ color: 'darkslategray' }} /> <span>mishivamm@gmail.com</span>
 
                         </div>
 

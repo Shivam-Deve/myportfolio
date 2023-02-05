@@ -1,0 +1,50 @@
+.toggle {
+    position: absolute;
+    right: 60px;
+    z-index: 10;
+    width: 50px;
+    height: 20px;
+    top: 70px;
+    border: 1px solid white;
+    cursor: pointer;
+    padding: auto;
+    border-radius: 10px;
+
+    &.dark {
+        span {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            top: -5px;
+            right: -2px;
+            border-radius: 50%;
+            display: block;
+            z-index: 1000;
+            background-color: silver;
+
+        }
+    }
+
+    &.light {
+        span {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            top: -5px;
+            left: -2px;
+            border-radius: 50%;
+            display: block;
+            z-index: 1000;
+            background-color: silver;
+
+        }
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    .toggle {
+        top: 40px;
+        right: 40px;
+    }
+}

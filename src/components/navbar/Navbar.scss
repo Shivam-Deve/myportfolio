@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     padding: 0 50px;
     color: darkslategray;
     font-weight: 600;
@@ -11,48 +11,58 @@
     position: fixed;
     top: 0;
     z-index: 10;
-    a{
+
+    a {
         text-decoration: none;
         color: inherit;
     }
-    &.active{
+
+    &.active {
         background-color: darkslategray;
-        .logo{
+
+        .logo {
             color: white;
         }
-        .navList li:nth-child(1){
+
+        .navList li:nth-child(1) {
             color: white;
         }
     }
-    .logo{
+
+    .logo {
         flex: 3;
         transition: 1s ease all;
-        .stamp{
+
+        .stamp {
             position: absolute;
             transition: 1s ease all;
             top: 0;
-            width:110px;
-            height:110px;
+            width: 110px;
+            height: 110px;
             background-color: darkslategray;
-            border-bottom-left-radius:5px ;
+            border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
-            display:flex;
+            display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            .dp{
-                flex: 11;
+
+            .dp {
+                flex: 8;
                 width: 80%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                .pic{
+                margin-bottom: 20%;
+
+                .pic {
                     height: 80%;
                     border-radius: 50%;
                     border: 2px solid white;
                     overflow: hidden;
                     background-color: white;
-                    img{
+
+                    img {
                         height: 100%;
                         width: 100%;
                         object-fit: contain;
@@ -60,10 +70,13 @@
                     }
                 }
             }
-            .name{
-                flex: 1;
+
+            .name {
+                flex: 2;
+                position: absolute;
+                bottom: 0;
                 width: 90%;
-                margin:auto;
+                margin: auto;
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
                 z-index: 5;
@@ -73,25 +86,37 @@
             }
         }
     }
-    .nav{
+
+    .nav {
         flex: 3;
-        .navList{
+
+        .navList {
             display: flex;
             justify-content: space-between;
             align-items: center;
             list-style: none;
-            li{
-                cursor: pointer;  
+
+            li {
+                cursor: pointer;
             }
-            li:nth-child(2){
+
+            li:nth-child(2) {
                 color: white;
             }
-            li:nth-child(3){
+
+            li:nth-child(3) {
                 color: white;
             }
-            li:nth-child(4){
+
+            li:nth-child(4) {
                 color: white;
             }
         }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .navbar {
+        display: none;
     }
 }

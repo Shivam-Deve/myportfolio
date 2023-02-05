@@ -1,61 +1,77 @@
-.contact{
+.contact {
     height: 100vh;
     width: 100%;
     position: relative;
-    .bg{
+
+    .bg {
         width: 20px;
         height: 100%;
         background-color: darkslategray;
         position: absolute;
     }
-    .wrapper{
+
+    .wrapper {
         padding: 50px;
         display: flex;
-        .left{
+
+        .left {
             flex: 1;
-            .title{
+
+            .title {
                 font-size: 60px;
                 width: 80%;
                 color: darkslategray;
             }
-            .info-item{
-                display: flex;
-                align-items: center;
-                margin: 50px 0px;
-                font-weight: 300;
-                width: 70%;
-                .icon{
-                    width: 30px;
-                    height: 30px;
+
+            .info {
+                .info-item {
+                    display: flex;
+                    align-items: center;
+                    margin: 50px 0px;
+                    font-weight: 300;
+                    width: 70%;
+
+                    .icon {
+                        width: 30px;
+                        height: 30px;
+                        margin-right: 10px;
+                    }
                 }
             }
+
+
         }
-        .right{
+
+        .right {
             flex: 1;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            .desc{
+
+            .desc {
                 font-weight: 200;
-                b{
+
+                b {
                     color: darkslategray;
                 }
             }
-            .form{
+
+            .form {
                 margin-top: 20px;
                 background-color: darkslategray;
-                border-radius:10px;
-                padding:10px;
+                border-radius: 10px;
+                padding: 10px;
                 position: relative;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 width: 100%;
-                span{
+
+                span {
                     position: absolute;
                     top: 0;
-                    left:50%;
+                    left: 50%;
                     transform: translateX(-50%);
                     background-color: white;
                     color: darkslategray;
@@ -64,21 +80,25 @@
                     border-bottom-left-radius: 5px;
                     border-bottom-right-radius: 5px;
                 }
-                form{
+
+                form {
                     margin-top: 50px;
                     display: flex;
                     flex-direction: column;
                     width: 80%;
-                    .row{
+
+                    .row {
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
                         gap: 10px;
                         margin-bottom: 20px;
-                        .form-control{
+
+                        .form-control {
                             flex: 1;
                             font-size: 14px;
-                            label{
+
+                            label {
                                 color: white;
                                 font-size: large;
                                 font-weight: 800;
@@ -86,7 +106,8 @@
                                 margin-bottom: 10px;
                                 text-transform: uppercase;
                             }
-                            input{
+
+                            input {
                                 height: 50px;
                                 display: block;
                                 padding-left: 10px;
@@ -94,31 +115,108 @@
                                 border: none;
                                 outline: none;
                                 width: 100%;
-                                &:focus{
+
+                                &:focus {
                                     outline: none;
                                 }
-                            }  
-                            textarea{
+                            }
+
+                            textarea {
                                 width: 100%;
                                 padding: 10px;
                                 border-radius: 5px;
-                                &:focus{
+
+                                &:focus {
                                     outline: none;
                                 }
-                            } 
+                            }
                         }
-                        
+
                     }
-                    button{
+
+                    button {
                         border: none;
                         padding: 15px;
-                        width:fit-content;
+                        width: fit-content;
                         border-radius: 5px;
                         background-color: white;
                         color: darkslategray;
                         font-weight: 500;
                         cursor: pointer;
-                    }  
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:480px) {
+    .bg {
+        display: none;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        padding: 10px !important;
+
+        .left {
+
+            .title {
+                font-size: 30px !important;
+                text-align: center;
+                width: 100% !important;
+            }
+
+            .info {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+
+                .info-item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 50px 0px;
+                    font-weight: 300;
+                    width: 70%;
+
+                    .icon {
+                        width: 30px;
+                        height: 30px;
+                        margin-right: 10px;
+                    }
+
+                    span {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .right {
+            .desc {
+                display: none;
+            }
+
+            .form {
+                width: 100%;
+
+                form {
+                    width: 100% !important;
+                    margin-bottom: 20px;
+
+                    .row {
+                        flex-direction: column;
+
+                        .form-control {
+                            width: 80%;
+                        }
+                    }
+
+                    button {
+                        margin-left: 10%;
+                    }
                 }
             }
         }
